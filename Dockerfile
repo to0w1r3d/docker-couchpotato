@@ -15,6 +15,7 @@ RUN apt-get install -qy git-core python2.7
 RUN git clone https://github.com/RuudBurger/CouchPotatoServer.git /couchpotato
 
 ADD start.sh /start.sh
+RUN chmod u+x  /start.sh
 
 VOLUME ["/data"]
 # Torrent watch directory
