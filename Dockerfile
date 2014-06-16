@@ -21,6 +21,7 @@ VOLUME /data
 VOLUME /torrents
 VOLUME /downloads
 VOLUME /movies
+VOLUME /share
 
 EXPOSE 5050
 
