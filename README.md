@@ -13,8 +13,11 @@ docker build -t couchpotato .
 ______________________
 
 VOLUME /data
+
 VOLUME /torrents
+
 VOLUME /downloads
+
 VOLUME /movies
 
 ______________________
