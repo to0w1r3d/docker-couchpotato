@@ -17,13 +17,11 @@ RUN git clone https://github.com/RuudBurger/CouchPotatoServer.git /couchpotato
 ADD start.sh /start.sh
 RUN chmod u+x  /start.sh
 
-VOLUME ["/data"]
-# Torrent watch directory
-VOLUME ["/torrents"]
-# Incoming downloads
-VOLUME ["/downloads"]
-# Movie library
-VOLUME ["/movies"]
+VOLUME /data
+VOLUME /torrents
+VOLUME /downloads
+VOLUME /movies
+
 EXPOSE 5050
 
 CMD ["/start.sh"]
