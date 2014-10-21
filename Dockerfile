@@ -12,7 +12,7 @@ RUN apt-get -qy --force-yes dist-upgrade
 RUN echo "deb http://archive.ubuntu.com/ubuntu trusty universe multiverse" >> /etc/apt/sources.list
 RUN apt-get -q update
 
-#RUN apt-get install -qy git-core python2.7 unrar
+RUN apt-get install -qy git-core python2.7 unrar
 RUN git clone https://github.com/RuudBurger/CouchPotatoServer.git /couchpotato
 
 ADD start.sh /start.sh
